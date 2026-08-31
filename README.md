@@ -109,6 +109,11 @@ On macOS, Manim needs cairo and pango: `brew install cairo pango pkg-config`.
   layout: overlaps, cutoffs, dead time. The generator cannot see its own
   output; the critic can. The loop typically converges in 1-2 rounds.
 
+## Demo
+
+Watch the first fully auto-generated explainer (10 minutes, six scenes,
+zero human edits): [How an Equity Factor Risk Model Works](https://github.com/wanxinwanxin/teach-me/releases/download/v0.1.0/how-an-equity-factor-risk-model-works.mp4).
+
 ## Example
 
 `examples/factor-risk-model/` builds an explainer of equity factor risk

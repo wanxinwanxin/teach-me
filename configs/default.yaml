@@ -1,0 +1,30 @@
+# The reference instance: Claude Code CLI as the agent runtime.
+# Strongest model on the thinking-heavy roles, fast model on the
+# high-volume code and vision roles.
+
+roles:
+  researcher: { backend: claude_cli, model: opus }
+  director:   { backend: claude_cli, model: opus }
+  animator:   { backend: claude_cli, model: sonnet }
+  critic:     { backend: claude_cli, model: sonnet }
+
+renderer:
+  name: manim
+  quality: m        # 720p30; use h for 1080p60 final cuts
+  fps: 30
+
+tts:
+  backend: macos_say
+  voice: Samantha
+  rate: 180
+
+limits:
+  max_scenes: 6
+  max_critique_iters: 2
+  max_render_fixes: 3
+  llm_timeout_s: 1800
+  source_char_budget: 80000
+
+notify:
+  method: macos     # or: command, with e.g.
+  # command: "echo 'video ready: {video}' | mail -s 'teachme: {topic}' you@example.com"

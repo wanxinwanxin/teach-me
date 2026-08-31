@@ -31,7 +31,7 @@ _print_lock = threading.Lock()
 class Pipeline:
     def __init__(self, config: TeachmeConfig, out_dir: Path, resume: bool = False):
         self.cfg = config
-        self.out = Path(out_dir)
+        self.out = Path(out_dir).resolve()
         self.out.mkdir(parents=True, exist_ok=True)
         self.resume = resume
         self.log_file = self.out / "run.log"

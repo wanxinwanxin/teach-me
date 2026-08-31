@@ -35,6 +35,7 @@ class ManimRenderer:
         self.python = python or sys.executable
 
     def render(self, scene_code: str, workdir: Path) -> Path:
+        workdir = workdir.resolve()
         workdir.mkdir(parents=True, exist_ok=True)
         scene_file = workdir / "scene.py"
         scene_file.write_text(scene_code)

@@ -12,6 +12,10 @@ teachme generate "equity factor risk models" --sources docs/METHODOLOGY.md
 The pipeline runs unsupervised. When the video is ready, you get a
 notification and an MP4.
 
+**Hosted instance**: https://teach-me-production.up.railway.app — watch the
+demo, sign in with Google, and generate your own explainer (bring your own
+Anthropic API key, or use the site's key for one free trial).
+
 ## How it works
 
 ```mermaid

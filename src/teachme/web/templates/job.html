@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>teachme — {{ job.topic }}</title>
+<style>
+  :root { --bg:#0e1015; --panel:#171a22; --line:#262b38; --text:#e8eaf0;
+          --dim:#9aa3b5; --blue:#58C4DD; }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: var(--bg); color: var(--text);
+         font: 16px/1.6 -apple-system, "Segoe UI", Roboto, sans-serif; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 24px; }
+  a { color: var(--blue); text-decoration: none; }
+  h1 { font-size: 26px; margin: 18px 0; }
+  .card { background: var(--panel); border: 1px solid var(--line);
+          border-radius: 14px; padding: 22px; margin-top: 20px; }
+  video { width: 100%; border-radius: 10px; display: block; }
+  pre { background: var(--bg); border: 1px solid var(--line); border-radius: 10px;
+        padding: 14px; font-size: 12.5px; overflow-x: auto; white-space: pre-wrap;
+        color: var(--dim); max-height: 340px; overflow-y: auto; }
+  .status { font-weight: 700; color: var(--blue); }
+  .note { color: var(--dim); font-size: 13px; margin-top: 10px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a href="/">← teachme</a>
+  <h1>{{ job.topic }}</h1>
+
+  <div class="card">
+    <div>Status: <span class="status" id="status">{{ job.status }}</span>
+      <span id="queuepos"></span></div>
+    <div id="videobox" style="display:none; margin-top:16px">
+      <video controls id="video"></video>
+    </div>
+    <div id="errbox" style="display:none; margin-top:16px; color:#FC6255"></div>
+    <h3 style="margin-top:20px">Pipeline log</h3>
+    <pre id="log">(waiting for the run to start)</pre>
+    <p class="note">This page updates itself. A full video takes roughly
+    20–40 minutes: research → storyboard → narration → animation → frame
+    critique → revision → assembly. You can close the page; the link keeps
+    working.</p>
+  </div>
+</div>
+<script>
+async function poll() {
+  try {
+    const r = await fetch('/api/jobs/{{ job.id }}');
+    const d = await r.json();
+    document.getElementById('status').textContent = d.status;
+    document.getElementById('queuepos').textContent =
+      d.status === 'queued' && d.queue_position > 0
+        ? ' (' + d.queue_position + ' job(s) ahead of you)' : '';
+    if (d.log) document.getElementById('log').textContent = d.log;
+    if (d.video) {
+      const box = document.getElementById('videobox');
+      if (box.style.display === 'none') {
+        box.style.display = 'block';
+        document.getElementById('video').src = d.video;
+      }
+    }
+    if (d.status === 'failed' && d.error) {
+      const eb = document.getElementById('errbox');
+      eb.style.display = 'block';
+      eb.textContent = 'The run failed. ' + d.error;
+    }
+    if (d.status === 'done' || d.status === 'failed') return;
+  } catch (e) { /* transient */ }
+  setTimeout(poll, 5000);
+}
+poll();
+</script>
+</body>
+</html>

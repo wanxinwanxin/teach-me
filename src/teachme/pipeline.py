@@ -12,7 +12,6 @@ from __future__ import annotations
 
 import datetime
 import re
-import sys
 import threading
 import traceback
 from concurrent.futures import ThreadPoolExecutor
@@ -28,6 +27,10 @@ from .types import RenderError, SceneSpec, Storyboard
 _print_lock = threading.Lock()
 
 
+class PipelineError(RuntimeError):
+    """The run finished with failed scenes."""
+
+
 class Pipeline:
     def __init__(self, config: TeachmeConfig, out_dir: Path, resume: bool = False):
         self.cfg = config
@@ -38,7 +41,8 @@ class Pipeline:
 
         def backend_for(role: str):
             rc = self.cfg.roles[role]
-            return load(BACKENDS, rc.backend, model=rc.model)
+            extra = {"api_key": rc.api_key} if rc.api_key else {}
+            return load(BACKENDS, rc.backend, model=rc.model, **extra)
 
         t = self.cfg.limits.llm_timeout_s
         self.renderer = load(
@@ -222,11 +226,12 @@ class Pipeline:
             list(pool.map(worker, board.scenes))
 
         if errors:
-            self.log(
+            msg = (
                 f"{len(errors)} scene(s) failed: {', '.join(sorted(errors))}. "
                 "Fix and re-run with --resume to keep finished scenes."
             )
-            sys.exit(1)
+            self.log(msg)
+            raise PipelineError(msg)
 
         slug = re.sub(r"[^a-z0-9]+", "-", topic.lower()).strip("-")[:60]
         final = self.out / f"{slug}.mp4"

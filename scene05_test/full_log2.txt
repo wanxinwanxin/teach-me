@@ -1,0 +1,532 @@
+Manim Community v0.21.0
+
+[08/31/26 17:09:45] INFO     Caching disabled.              cairo_renderer.py:81
+Animation 0: Write(Text('The optimizer is an adversary')):   0%|          | 0/18 [00:00<?, ?it/s]                                                                                                                     INFO     Animation 0 : Partial      scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00000.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 1: FadeIn(VGroup of 2 submobjects):   0%|          | 0/15 [00:00<?, ?it/s]                                                                                                        INFO     Animation 1 : Partial      scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00001.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 2: FadeIn(Rectangle):   0%|          | 0/5 [00:00<?, ?it/s]                                                                                         INFO     Animation 2 : Partial      scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00002.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 3: _MethodAnimation(Rectangle):   0%|          | 0/30 [00:00<?, ?it/s]                                                                                                    INFO     Animation 3 : Partial      scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00003.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 4: FadeOut(Rectangle), etc.:   0%|          | 0/6 [00:00<?, ?it/s]                                                                                                INFO     Animation 4 : Partial      scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00004.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 5: FadeIn(Text('it hunts the cheapest direction')):   0%|          | 0/9 [00:00<?, ?it/s]                                                                                                                       INFO     Animation 5 : Partial      scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00005.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+                    INFO     Animation 6 : Partial      scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00006.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+                    INFO     Animation 7 : Partial      scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00007.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 8: FadeOut(VGroup of 2 submobjects), etc.:   0%|          | 0/15 [00:00<?, ?it/s]                                                                                                               INFO     Animation 8 : Partial      scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00008.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 9: ReplacementTransform(Text('The optimizer is an adversary')):   0%|          | 0/12 [00:00<?, ?it/s]                                                                                                                [08/31/26 17:09:46] INFO     Animation 9 : Partial      scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00009.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 10: Create(Axes of 2 submobjects):   0%|          | 0/23 [00:00<?, ?it/s]                                                                                                       INFO     Animation 10 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00010.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 11: FadeIn(Text('hedge ratio h')), etc.:   0%|          | 0/12 [00:00<?, ?it/s]                                                                                                             INFO     Animation 11 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00011.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 12: Write(MathTex('\\sigma^2 = 0.04\\,(1 + h^2 - 2h\\rho), \\quad \\rho = 0.60')):   0%|          | 0/23 [00:00<?, ?it/s]                                                                                                                                                       INFO     Animation 12 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00012.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 13: Create(ParametricFunction):   0%|          | 0/30 [00:00<?, ?it/s]                                                                                                    INFO     Animation 13 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00013.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 14: FadeIn(Text('true')):   0%|          | 0/8 [00:00<?, ?it/s]                                                                                             INFO     Animation 14 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00014.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+                    INFO     Animation 15 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00015.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 16: FadeIn(Dot):   0%|          | 0/8 [00:00<?, ?it/s]                                                                                    INFO     Animation 16 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00016.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 17: Create(DashedLine):   0%|          | 0/11 [00:00<?, ?it/s]                                                                                            INFO     Animation 17 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00017.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 18: FadeIn(MathTex('16.0\\%')):   0%|          | 0/8 [00:00<?, ?it/s]                                                                                                   INFO     Animation 18 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00018.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+                    INFO     Animation 19 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00019.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+                    INFO     Animation 20 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00020.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 21: FadeIn(Dot), etc.:   0%|          | 0/12 [00:00<?, ?it/s]                                                                                           INFO     Animation 21 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00021.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 22: FadeIn(Dot), etc.:   0%|          | 0/12 [00:00<?, ?it/s]                                                                                           INFO     Animation 22 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00022.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 23: Create(DoubleArrow), etc.:   0%|          | 0/12 [00:00<?, ?it/s]                                                                                                   INFO     Animation 23 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00023.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 24: FadeIn(Text('estimate 0.75')):   0%|          | 0/9 [00:00<?, ?it/s]                                                                                                      INFO     Animation 24 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00024.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+                    INFO     Animation 25 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00025.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+                    INFO     Animation 26 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00026.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 27: FadeIn(Dot), etc.:   0%|          | 0/12 [00:00<?, ?it/s]                                                                                           INFO     Animation 27 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00027.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 28: FadeIn(Dot), etc.:   0%|          | 0/12 [00:00<?, ?it/s]                                                                                           INFO     Animation 28 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00028.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 29: Create(DoubleArrow), etc.:   0%|          | 0/12 [00:00<?, ?it/s]                                                                               [08/31/26 17:09:47] INFO     Animation 29 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00029.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 30: FadeIn(Text('estimate 0.45')):   0%|          | 0/9 [00:00<?, ?it/s]                                                                                                      INFO     Animation 30 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00030.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+                    INFO     Animation 31 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00031.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+                    INFO     Animation 32 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00032.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 33: Create(DashedLine):   0%|          | 0/18 [00:00<?, ?it/s]                                                                                            INFO     Animation 33 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00033.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 34: FadeOut(VGroup of 19 submobjects):   0%|          | 0/18 [00:00<?, ?it/s]Animation 34: FadeOut(VGroup of 19 submobjects):  67%|██████▋   | 12/18 [00:00<00:00, 115.48it/s]                                                                                                                     INFO     Animation 34 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00034.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 35: FadeIn(Text('same true risk, different forecast')):   0%|          | 0/9 [00:00<?, ?it/s]                                                                                                                           INFO     Animation 35 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00035.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+                    INFO     Animation 36 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00036.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+                    INFO     Animation 37 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00037.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 38: FadeOut(DashedLine), etc.:   0%|          | 0/18 [00:00<?, ?it/s]                                                                                                   INFO     Animation 38 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00038.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 39: Create(NumberLine), etc.:   0%|          | 0/15 [00:00<?, ?it/s]                                                                              [08/31/26 17:09:48] INFO     Animation 39 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00039.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 40: LaggedStart(Group):   0%|          | 0/23 [00:00<?, ?it/s]                                                                                            INFO     Animation 40 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00040.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 41: _MethodAnimation(Dot), etc.:   0%|          | 0/30 [00:00<?, ?it/s]                                                                                                     INFO     Animation 41 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00041.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 42: FadeIn(Text('the optimizer takes these')):   0%|          | 0/9 [00:00<?, ?it/s]                                                                                                                  INFO     Animation 42 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00042.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+                    INFO     Animation 43 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00043.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 44: FadeIn(Text('symmetric error becomes one-sided bias')):   0%|          | 0/9 [00:00<?, ?it/s]                                                                                                                               INFO     Animation 44 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00044.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+                    INFO     Animation 45 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00045.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+                    INFO     Animation 46 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00046.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 47: FadeOut(NumberLine), etc.:   0%|          | 0/18 [00:00<?, ?it/s]                                                                                                   INFO     Animation 47 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00047.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 48: Write(MathTex('\\sigma_{\\text{true}} \\approx \\frac{\\sigma_{\\text{predicted}}}{1 - K / N_{\\text{eff}}}')):   0%|          | 0/27 [00:00<?, ?it/s]                                                                                                                                                                                        INFO     Animation 48 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00048.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 49: FadeIn(Text('parameters over information')):   0%|          | 0/9 [00:00<?, ?it/s]                                                                                                                    INFO     Animation 49 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00049.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+                    INFO     Animation 50 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00050.mp4'                                   
+[08/31/26 17:09:49] INFO     Caching disabled.              cairo_renderer.py:81
+Animation 51: Write(MathTex('\\frac{1}{1 - 20/243} = 1.090')):   0%|          | 0/21 [00:00<?, ?it/s]                                                                                                                         INFO     Animation 51 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00051.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 52: Write(Text('measured 1.088')):   0%|          | 0/15 [00:00<?, ?it/s]                                                                                                       INFO     Animation 52 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00052.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 53: FadeIn(Text('at K = 40 the floor is 1.20')):   0%|          | 0/9 [00:00<?, ?it/s]                                                                                                                    INFO     Animation 53 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00053.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+                    INFO     Animation 54 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00054.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+                    INFO     Animation 55 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00055.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 56: FadeOut(MathTex('\\sigma_{\\text{true}} \\approx \\frac{\\sigma_{\\text{predicted}}}{1 - K / N_{\\text{eff}}}')), etc.:   0%|          | 0/18 [00:00<?, ?it/s]Animation 56: FadeOut(MathTex('\\sigma_{\\text{true}} \\approx \\frac{\\sigma_{\\text{predicted}}}{1 - K / N_{\\text{eff}}}')), etc.:  89%|████████▉ | 16/18 [00:00<00:00, 159.85it/s]                                                                                                                                                                                                          INFO     Animation 56 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00056.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 57: LaggedStart(Group):   0%|          | 0/30 [00:00<?, ?it/s]                                                                                            INFO     Animation 57 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00057.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 58: FadeIn(Text('the matrix')), etc.:   0%|          | 0/9 [00:00<?, ?it/s]                                                                                                         INFO     Animation 58 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00058.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 59: FadeIn(Text('unbiased for chosen-in-advance')), etc.:   0%|          | 0/12 [00:00<?, ?it/s]                                                                                                          [08/31/26 17:09:50] INFO     Animation 59 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00059.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+                    INFO     Animation 60 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00060.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 61: FadeIn(Text('the correction lives where the selection happened')):   0%|          | 0/21 [00:00<?, ?it/s]                                                                                                                                           INFO     Animation 61 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00061.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+                    INFO     Animation 62 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00062.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+Animation 63: FadeOut(VGroup of 9 submobjects):   0%|          | 0/15 [00:00<?, ?it/s]Animation 63: FadeOut(VGroup of 9 submobjects):  67%|██████▋   | 10/15 [00:00<00:00, 96.91it/s]                                                                                                                   INFO     Animation 63 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00063.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:81
+                    INFO     Animation 64 : Partial     scene_file_writer.py:192
+                             movie file written in                              
+                             '/Users/xinwan/Github/teac                         
+                             h-me/scene05_test/media/vi                         
+                             deos/scene/480p15/partial_                         
+                             movie_files/TeachScene/unc                         
+                             ached_00064.mp4'                                   
+                    INFO     Combining to Movie file.   scene_file_writer.py:952
+[08/31/26 17:09:51] INFO                               scene_file_writer.py:1103
+                             File ready at                                      
+                             '/Users/xinwan/Github/tea                          
+                             ch-me/scene05_test/media/                          
+                             videos/scene/480p15/out3.                          
+                             mp4'                                               
+                                                                                
+                    INFO     Rendered TeachScene                    scene.py:290
+                             Played 65 animations                               

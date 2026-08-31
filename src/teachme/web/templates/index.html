@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>teachme — explainer videos for any topic</title>
+<style>
+  :root {
+    --bg: #0e1015; --panel: #171a22; --line: #262b38;
+    --text: #e8eaf0; --dim: #9aa3b5; --blue: #58C4DD; --gold: #F4D345;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: var(--bg); color: var(--text);
+         font: 16px/1.6 -apple-system, "Segoe UI", Roboto, sans-serif; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 24px; }
+  header { display: flex; align-items: center; justify-content: space-between;
+           padding: 12px 0 28px; }
+  .logo { font-size: 22px; font-weight: 700; }
+  .logo span { color: var(--blue); }
+  nav a { color: var(--dim); text-decoration: none; margin-left: 18px; }
+  nav a:hover { color: var(--text); }
+  h1 { font-size: 40px; line-height: 1.2; margin: 20px 0 12px; }
+  h1 em { color: var(--blue); font-style: normal; }
+  .sub { color: var(--dim); font-size: 19px; max-width: 640px; }
+  .card { background: var(--panel); border: 1px solid var(--line);
+          border-radius: 14px; padding: 22px; margin-top: 28px; }
+  video { width: 100%; border-radius: 10px; display: block; }
+  label { display: block; color: var(--dim); font-size: 14px; margin: 14px 0 6px; }
+  input[type=text], input[type=password] {
+    width: 100%; padding: 12px; border-radius: 8px; border: 1px solid var(--line);
+    background: var(--bg); color: var(--text); font-size: 16px; }
+  .radio-row { display: flex; gap: 18px; margin-top: 8px; flex-wrap: wrap; }
+  .radio-row label { display: flex; gap: 8px; align-items: center; margin: 0;
+                     color: var(--text); cursor: pointer; }
+  button, .btn { background: var(--blue); color: #08222b; font-weight: 700;
+    border: 0; border-radius: 8px; padding: 12px 22px; font-size: 16px;
+    cursor: pointer; text-decoration: none; display: inline-block; margin-top: 18px; }
+  button:hover, .btn:hover { filter: brightness(1.1); }
+  .note { color: var(--dim); font-size: 13px; margin-top: 10px; }
+  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+           gap: 14px; margin-top: 16px; }
+  .step { background: var(--bg); border: 1px solid var(--line);
+          border-radius: 10px; padding: 14px; }
+  .step b { color: var(--gold); }
+  table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+  td, th { padding: 8px 6px; border-bottom: 1px solid var(--line);
+           text-align: left; font-size: 14px; }
+  a { color: var(--blue); }
+  .pill { font-size: 12px; padding: 2px 10px; border-radius: 99px;
+          border: 1px solid var(--line); color: var(--dim); }
+  .pill.done { color: #83C167; border-color: #83C167; }
+  .pill.failed { color: #FC6255; border-color: #FC6255; }
+  .pill.running { color: var(--gold); border-color: var(--gold); }
+  footer { color: var(--dim); font-size: 13px; padding: 40px 0 20px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">teach<span>me</span></div>
+    <nav>
+      <a href="{{ github_url }}">GitHub</a>
+      {% if user %}
+        <a href="/auth/logout">Sign out ({{ user.name }})</a>
+      {% elif google_configured %}
+        <a href="/auth/login">Sign in with Google</a>
+      {% endif %}
+    </nav>
+  </header>
+
+  <h1>Type a concept.<br>Get a <em>3Blue1Brown-style</em> explainer video.</h1>
+  <p class="sub">An open-source pipeline of agents researches your topic,
+  writes the storyboard, animates it in Manim, watches its own frames,
+  revises them, and narrates the result. Unsupervised, end to end.</p>
+
+  {% if demo_video_url %}
+  <div class="card">
+    <h2 style="margin-bottom:12px">Demo: how an equity factor risk model works</h2>
+    <video controls preload="metadata" src="{{ demo_video_url }}"></video>
+    <p class="note">Generated fully automatically from a topic prompt and two
+    methodology documents — storyboard, animation code, QA, and narration
+    included.</p>
+  </div>
+  {% endif %}
+
+  <div class="card">
+    <h2>Teach me</h2>
+    {% if not user %}
+      <p class="note" style="font-size:15px">Sign in to generate a video.</p>
+      {% if google_configured %}
+        <a class="btn" href="/auth/login">Sign in with Google</a>
+      {% else %}
+        <p class="note">Sign-in is being configured. Check back soon.</p>
+      {% endif %}
+    {% else %}
+    <form method="post" action="/generate">
+      <label for="topic">Topic</label>
+      <input type="text" id="topic" name="topic" required minlength="8"
+             placeholder="for example: why eigenvalues of a sample covariance matrix are biased">
+      <label>API key</label>
+      <div class="radio-row">
+        <label><input type="radio" name="key_mode" value="own" checked
+               onchange="document.getElementById('keybox').style.display='block'">
+               My own Anthropic key</label>
+        {% if shared_key_available %}
+        <label><input type="radio" name="key_mode" value="trial"
+               {% if trial_used %}disabled{% endif %}
+               onchange="document.getElementById('keybox').style.display='none'">
+               Use the site's key
+               {% if trial_used %}(trial used){% else %}(one free trial){% endif %}
+        </label>
+        {% endif %}
+      </div>
+      <div id="keybox">
+        <label for="api_key">Anthropic API key (used for this job only, never stored)</label>
+        <input type="password" id="api_key" name="api_key" placeholder="sk-ant-...">
+      </div>
+      <button type="submit">Generate my explainer</button>
+      <p class="note">A video takes roughly 20–40 minutes and costs a few
+      dollars of API usage. Jobs run one at a time; you can close this page
+      and come back.</p>
+    </form>
+
+    {% if jobs %}
+      <h3 style="margin-top:26px">Your videos</h3>
+      <table>
+        {% for j in jobs %}
+        <tr>
+          <td><a href="/jobs/{{ j['id'] }}">{{ j['topic'] }}</a></td>
+          <td><span class="pill {{ j['status'] }}">{{ j['status'] }}</span></td>
+        </tr>
+        {% endfor %}
+      </table>
+    {% endif %}
+    {% endif %}
+  </div>
+
+  <div class="card">
+    <h2>How it works</h2>
+    <div class="steps">
+      <div class="step"><b>1 · Research.</b> An agent builds a brief: the core
+        tension, the step-by-step logic, real numbers, common misconceptions.</div>
+      <div class="step"><b>2 · Direct.</b> A director turns the brief into
+        scenes with narration beats and a precise visual plan.</div>
+      <div class="step"><b>3 · Animate.</b> An animator writes Manim code —
+        the same engine 3Blue1Brown built — timed to the narration.</div>
+      <div class="step"><b>4 · Critique.</b> A vision critic inspects rendered
+        frames for overlaps, cutoffs, wrong math, and dead time, then sends
+        fixes back. Then everything gets narrated and assembled.</div>
+    </div>
+    <p class="note" style="margin-top:14px">Every slot is pluggable: LLM
+      backends, renderers, voices. <a href="{{ github_url }}">Read the code
+      and run it locally →</a></p>
+  </div>
+
+  <footer>MIT licensed · <a href="{{ github_url }}">{{ github_url }}</a></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+.venv
+output
+webdata
+media
+__pycache__
+.git
+.spec-workflow

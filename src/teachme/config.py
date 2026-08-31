@@ -12,6 +12,9 @@ import yaml
 class RoleConfig:
     backend: str = "claude_cli"
     model: str = "sonnet"
+    # Only for API backends. Prefer environment variables; this field exists
+    # so a host application can inject a per-run key programmatically.
+    api_key: str | None = None
 
 
 @dataclass

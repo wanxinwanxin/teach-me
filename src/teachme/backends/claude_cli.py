@@ -45,17 +45,26 @@ class ClaudeCliBackend:
             for k, v in os.environ.items()
             if k not in ("CLAUDECODE", "CLAUDE_CODE_ENTRYPOINT")
         }
-        result = subprocess.run(
-            cmd,
-            input=prompt,
-            capture_output=True,
-            text=True,
-            timeout=timeout_s,
-            env=env,
-        )
-        if result.returncode != 0:
-            raise RuntimeError(
-                f"claude CLI failed (exit {result.returncode}):\n"
-                f"{result.stderr[-2000:]}"
-            )
-        return result.stdout.strip()
+        # A nested CLI call can hang rarely; one retry beats a dead scene.
+        last_err: Exception | None = None
+        for attempt in range(2):
+            try:
+                result = subprocess.run(
+                    cmd,
+                    input=prompt,
+                    capture_output=True,
+                    text=True,
+                    timeout=timeout_s,
+                    env=env,
+                )
+            except subprocess.TimeoutExpired as err:
+                last_err = err
+                continue
+            if result.returncode != 0:
+                last_err = RuntimeError(
+                    f"claude CLI failed (exit {result.returncode}):\n"
+                    f"{result.stderr[-2000:]}"
+                )
+                continue
+            return result.stdout.strip()
+        raise RuntimeError(f"claude CLI gave no answer after 2 attempts: {last_err}")

@@ -38,6 +38,10 @@ GITHUB_URL = "https://github.com/wanxinwanxin/teach-me"
 DEMO_VIDEO_URL = os.environ.get("DEMO_VIDEO_URL", "")
 SHARED_KEY = os.environ.get("SHARED_ANTHROPIC_KEY", "")
 WEB_MODEL = os.environ.get("TEACHME_MODEL", "claude-sonnet-5")
+# kokoro needs Python <3.13; the manim base image ships 3.13, so edge_tts is
+# the hosted default. Set TEACHME_TTS=kokoro on an image that supports it.
+WEB_TTS = os.environ.get("TEACHME_TTS", "edge_tts")
+WEB_VOICE = os.environ.get("TEACHME_VOICE", "en-US-AndrewNeural")
 
 app = FastAPI(title="teachme")
 templates = Jinja2Templates(directory=str(Path(__file__).parent / "templates"))
@@ -56,7 +60,7 @@ def _web_config(api_key: str, shared: bool) -> TeachmeConfig:
         cfg.roles[role] = RoleConfig(
             backend="anthropic_api", model=WEB_MODEL, api_key=api_key
         )
-    cfg.tts = TtsConfig(backend="kokoro", voice="af_heart", rate=0)
+    cfg.tts = TtsConfig(backend=WEB_TTS, voice=WEB_VOICE, rate=0)
     cfg.renderer.quality = "m"
     cfg.limits.max_scenes = 3 if shared else 5
     cfg.limits.max_critique_iters = 1

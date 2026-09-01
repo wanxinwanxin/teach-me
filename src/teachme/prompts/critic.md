@@ -16,6 +16,9 @@ VISUAL SPEC (what the director asked for):
 STYLE GUIDE (the standard you enforce):
 {style_guide}
 
+NARRATION STYLE GUIDE (the narration beats above must obey it):
+{narration_style}
+
 Grade these dimensions, hunting for concrete defects visible in the frames:
 1. LEGIBILITY — text cut off by frame edges, overlapping labels, tiny
    fonts, low-contrast colors, objects escaping the frame.
@@ -26,6 +29,11 @@ Grade these dimensions, hunting for concrete defects visible in the frames:
 4. PACING — frames suggesting long stretches where nothing is on screen,
    or everything appearing at once early in the scene.
 5. CONTINUITY — palette violations against the notes.
+6. NARRATION — violations of the narration style guide in the beats
+   (banned words, hype connectors, sentences over 20 words, terms used
+   before they are motivated). Report these even though you cannot fix
+   the audio: the animator cannot fix them either, so mark them severity
+   "low" with the exact offending sentence, for the director's record.
 
 Severity: "high" = a viewer would notice and be confused or annoyed
 (overlaps, cutoffs, wrong math, empty screen for many seconds).

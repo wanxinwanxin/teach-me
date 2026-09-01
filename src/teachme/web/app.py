@@ -56,7 +56,7 @@ def _web_config(api_key: str, shared: bool) -> TeachmeConfig:
         cfg.roles[role] = RoleConfig(
             backend="anthropic_api", model=WEB_MODEL, api_key=api_key
         )
-    cfg.tts = TtsConfig(backend="edge_tts", voice="en-US-AndrewNeural", rate=0)
+    cfg.tts = TtsConfig(backend="kokoro", voice="af_heart", rate=0)
     cfg.renderer.quality = "m"
     cfg.limits.max_scenes = 3 if shared else 5
     cfg.limits.max_critique_iters = 1

@@ -16,9 +16,16 @@ Produce a research brief in markdown with exactly these sections:
 The 3-6 load-bearing ideas, each stated in one sentence, ordered from
 foundation to payoff.
 
+## Who needs this and why
+A concrete person with a concrete want, stated in one or two sentences,
+with small real numbers. This becomes the opening scene, so it must be a
+situation a viewer can hold in their head ("you hold thirty stocks...").
+Also state the naive approach that person would try first, and exactly
+how and where it fails.
+
 ## The core tension
-The single problem or paradox that motivates the whole topic. This is the
-hook of the video. State it concretely, with numbers if possible.
+The single problem or paradox that motivates the whole topic. State it
+concretely, with numbers if possible.
 
 ## Step-by-step logic
 The full chain of reasoning, as numbered steps. For each step give:

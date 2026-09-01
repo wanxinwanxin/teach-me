@@ -23,6 +23,7 @@ TTS_BACKENDS: dict[str, str] = {
     "macos_say": "teachme.audio.macos_say:MacosSayBackend",
     "openai_tts": "teachme.audio.openai_tts:OpenAiTtsBackend",
     "edge_tts": "teachme.audio.edge_tts:EdgeTtsBackend",
+    "kokoro": "teachme.audio.kokoro_tts:KokoroBackend",
 }
 
 

@@ -14,9 +14,9 @@ renderer:
   fps: 30
 
 tts:
-  backend: macos_say
-  voice: Samantha
-  rate: 180
+  backend: kokoro      # Kokoro-82M, local neural TTS, no API key
+  voice: af_heart
+  rate: 0              # 0 = natural pace
 
 limits:
   max_scenes: 6

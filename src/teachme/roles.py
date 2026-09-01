@@ -70,6 +70,7 @@ class Director:
             topic=topic,
             brief=brief,
             style_guide=_style_guide(),
+            narration_style=_load_prompt("narration_style"),
             max_scenes=max_scenes,
         )
         reply = self.backend.complete(prompt, timeout_s=self.timeout_s)
@@ -165,6 +166,7 @@ class Critic:
             beats_block=_beats_block(scene),
             visual_spec=scene.visual_spec,
             style_guide=_style_guide(),
+            narration_style=_load_prompt("narration_style"),
         )
         reply = self.backend.complete(
             prompt, images=frames, timeout_s=self.timeout_s

@@ -47,6 +47,34 @@ app = FastAPI(title="teachme")
 templates = Jinja2Templates(directory=str(Path(__file__).parent / "templates"))
 db = Db(DATA_DIR / "teachme.sqlite3")
 
+# GitHub release assets are served as application/octet-stream with an
+# attachment disposition, which iOS refuses to play inline. So the app
+# mirrors the demo video onto its own disk at startup and serves it with
+# a proper video/mp4 content type (and Range support via FileResponse).
+DEMO_LOCAL = DATA_DIR / "demo.mp4"
+
+
+def _mirror_demo() -> None:
+    if not DEMO_VIDEO_URL or DEMO_LOCAL.exists():
+        return
+    try:
+        import httpx
+
+        tmp = DEMO_LOCAL.with_suffix(".part")
+        with httpx.stream(
+            "GET", DEMO_VIDEO_URL, follow_redirects=True, timeout=120
+        ) as r:
+            r.raise_for_status()
+            with tmp.open("wb") as f:
+                for chunk in r.iter_bytes():
+                    f.write(chunk)
+        tmp.rename(DEMO_LOCAL)
+    except Exception:
+        DEMO_LOCAL.with_suffix(".part").unlink(missing_ok=True)
+
+
+threading.Thread(target=_mirror_demo, daemon=True).start()
+
 # ---------- job worker ----------
 
 _job_queue: "queue.Queue[tuple[str, str, str | None]]" = queue.Queue()
@@ -124,7 +152,7 @@ def index(request: Request):
             "user": user,
             "jobs": jobs,
             "github_url": GITHUB_URL,
-            "demo_video_url": DEMO_VIDEO_URL,
+            "demo_video_url": "/demo.mp4" if DEMO_VIDEO_URL else "",
             "google_configured": auth.configured(),
             "shared_key_available": bool(SHARED_KEY),
             "trial_used": db.trial_used(user["email"]) if user else False,
@@ -262,6 +290,16 @@ def video(job_id: str):
     if not final:
         return JSONResponse({"error": "not ready"}, status_code=404)
     return FileResponse(final, media_type="video/mp4")
+
+
+@app.get("/demo.mp4")
+def demo_video():
+    if DEMO_LOCAL.exists():
+        return FileResponse(DEMO_LOCAL, media_type="video/mp4")
+    if DEMO_VIDEO_URL:
+        # Mirror not ready yet; hand the browser the source directly.
+        return RedirectResponse(DEMO_VIDEO_URL)
+    return JSONResponse({"error": "no demo"}, status_code=404)
 
 
 @app.get("/health")
